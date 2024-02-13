@@ -22,7 +22,7 @@ public class TaskController {
 		return repository.findAll();
 	}
 	
-	@PostMapping
+	@PostMapping("/nuevo")
 	public Task saveTask(@RequestBody TaskRequest taskRequest) {
 		Task newTask = new Task(taskRequest.getName(), taskRequest.getDescription());
 		return repository.save(newTask);
