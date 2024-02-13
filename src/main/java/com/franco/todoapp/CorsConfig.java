@@ -14,7 +14,7 @@ public class CorsConfig implements WebMvcConfigurer {
 		// TODO Auto-generated method stub
 		registry.addMapping("/**")
 		.allowedOrigins("*")
-		.allowedMethods("*");
+		.allowedMethods("GET", "POST");
 	}
 	
 }
